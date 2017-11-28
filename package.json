@@ -1,0 +1,29 @@
+{
+  "name": "serverless-proxy",
+  "version": "1.0.0",
+  "description": "Serverless proxy for Cloudant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glynnbird/serverless-proxy.git"
+  },
+  "keywords": [
+    "CouchDB",
+    "serverless",
+    "OpenWhisk"
+  ],
+  "author": "Glynn Bird <glynn.bird@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/glynnbird/serverless-proxy/issues"
+  },
+  "homepage": "https://github.com/glynnbird/serverless-proxy#readme",
+  "dependencies": {
+    "cloudant": "^1.7.1"
+  },
+  "devDependencies": {
+  }
+}
