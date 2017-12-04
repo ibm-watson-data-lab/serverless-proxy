@@ -13,13 +13,13 @@ cd ..
 
 # create API
 bx wsk api create /proxy "/$COUCH_DATABASE" get proxy/get_db --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE" put proxy/put_db --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE" delete proxy/del_db --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE" put proxy/put_db --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE" delete proxy/del_db --response-type http
 bx wsk api create /proxy "/$COUCH_DATABASE/_all_docs" get proxy/all_docs --response-type http
 bx wsk api create /proxy "/$COUCH_DATABASE/_all_docs" post proxy/all_docs --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE/_bulk_docs" post proxy/bulk_docs --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE/_bulk_get" get proxy/get_bulk_get --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE/_bulk_get" post proxy/post_bulk_get --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE/_revs_diff" post proxy/revs_diff --response-type http
-bx wsk api create /envoy "/$COUCH_DATABASE/_changes" get proxy/changes --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE/_bulk_docs" post proxy/bulk_docs --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE/_bulk_get" get proxy/get_bulk_get --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE/_bulk_get" post proxy/post_bulk_get --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE/_revs_diff" post proxy/revs_diff --response-type http
+bx wsk api create /proxy "/$COUCH_DATABASE/_changes" get proxy/changes --response-type http
 
